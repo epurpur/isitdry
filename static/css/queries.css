@@ -1,0 +1,226 @@
+
+
+@media only screen and (max-width: 1200px) {
+
+	/* Weather Forecast Page */
+
+	.column {
+	    float: left;
+	    width: 13.8%;
+	    height: 380px;
+	    margin-left: 2px;
+	    margin-right: 2px;
+	    background-color: darkgray;
+		}
+
+	.forecast-info {
+	    padding-left: 2%;
+	    font-size: 14px;
+	    font-family: "Lato";
+		}
+}
+
+
+@media only screen and (max-width: 1023px) {
+
+	/* Weather Forecast Page */
+
+	.column {
+	    float: left;
+	    width: 13.7%;
+	    height: 315px;
+	    margin-left: 2px;
+	    margin-right: 2px;
+	    background-color: darkgray;
+		}
+
+	.location-header {
+	    font-size: 35px;
+	    font-family: "Lato";
+		}
+
+	.location-item {
+	    display: inline-block;
+	    font-family: "Lato";
+	    font-size: 18px;
+	    padding-left: 1%;
+	    width: 100%;
+		}
+
+	.forecast-info {
+	    padding-left: 2%;
+	    font-size: 12px;
+	    font-family: "Lato";
+		}
+
+	.date-text {
+	    text-align: center;
+	    color: darkblue;
+	    font-size: 13px;
+	    font-weight: bold;
+		}
+
+	.date-subtext {
+	    font-size: 10px;
+	    text-align: center;
+	    font-weight: bold;
+		}
+
+	/* Contact Page */
+
+	.block2 {
+	    display: none;
+		}
+
+}
+
+
+@media only screen and (max-width: 767px) {
+
+	/* Weather Forecast Page */
+
+	.column {
+	    float: left;
+	    width: 99%;
+	    height: 200px;
+	    margin-left: 2px;
+	    margin-right: 2px;
+	    margin-bottom: 5px;
+	    background-color: darkgray;
+		}
+
+	.location-header {
+	    font-size: 32px;
+	    font-family: "Lato";
+		}
+
+	.location-item {
+	    display: inline-block;
+	    font-family: "Lato";
+	    font-size: 16px;
+	    padding-left: 1%;
+	    width: 100%;
+		}
+
+	.date-text {
+	    text-align: center;
+	    color: darkblue;
+	    font-size: 15px;
+	    font-weight: bold;
+	    width: 70%;
+		}
+
+	.date-subtext {
+	    font-size: 10px;
+	    text-align: center;
+	    font-weight: bold;
+	    width: 70%;
+		}
+
+	.forecast-info {
+	    padding-left: 10%;
+	    font-size: 12px;
+	    font-family: "Lato";
+		}
+
+	img {
+		float: left;
+	    margin: 0 auto;  /*center aligns images */
+	    height: 95%;
+	    width: 35%;
+	    text-align: center;
+	    padding-top: 1%;
+	    padding-right: 7%;
+	    padding-left: 5px;
+		}
+
+	/* Contact Page */
+
+	.block1 {
+	    display: inline-block;
+	    float: left;
+	    width: 100%;
+	    height: 55%;
+	    padding-left: 1%;
+		}
+
+	.block2 {
+	    display: none;
+		}
+
+	.github-contact {
+	    width: 45%;
+	    float: left;
+	    display: inline-block;
+		}
+
+}
+
+
+@media only screen and (max-width: 540px) {
+
+	/* Weather Forecast Page */
+
+	.column {
+	    float: left;
+	    width: 99%;
+	    height: 200px;
+	    margin-left: 2px;
+	    margin-right: 2px;
+	    margin-top: 5px;
+	    margin-bottom: 5px;
+	    background-color: darkgray;
+		}
+
+	.location-information {
+	    display: inline-block;
+	    width: 98%;
+	    height: 75%;
+		}
+
+	.date-text {
+	    text-align: center;
+	    color: darkblue;
+	    font-size: 12px;
+	    font-weight: bold;
+	    width: 70%;
+		}
+
+	/* Home Page */
+
+	#map-inset {
+	    float: right;
+	    width: 99%;
+	    height: 98%;
+	    background-color: azure;
+	    padding-right: 1%;
+		}
+
+	/* Contact Page */
+
+	.block1 {
+	    display: inline-block;
+	    float: left;
+	    width: 100%;
+	    height: 55%;
+	    padding-left: 1%;
+		}
+
+	#personal-bio {
+	    font-family: "Lato";
+	    font-size: 25px; 
+	    height: 35%;
+		}
+
+	.github-contact {
+	    width: 65%;
+	    float: left;
+	    display: inline-block;
+		}
+
+}
+
+
+
+
+

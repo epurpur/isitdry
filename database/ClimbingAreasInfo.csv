@@ -1,0 +1,315 @@
+﻿State,City,Alias,City_ID,Lat,Lon
+NC,Blowing Rock,Boone vicinity,4456376,36.129,-81.689
+NC,Morganton,Linville Gorge,4480219,35.8909,-81.891
+NC,Lake Lure,Rumbling Bald,4474803,35.447,-82.218
+NC,Brevard,Looking Glass,4457040,35.303,-82.802
+NC,Danbury,Moore's Wall,4462940,36.398,-80.269
+NC,Elkin,Stone Mountain,4465155,36.382,-81.024
+NC,Asheboro,Asheboro,4453035,35.719,-79.937
+NC,Gastonia,Crowder's Mountain,4467732,35.208,-81.299
+NC,Cashiers,Cashiers Vicnity,4467128,35.114,-83.101
+WV,Fayetteville,New River Gorge,4798308,38.062,-81.176
+WV,Franklin,Seneca Rocks,4806504,38.834,-79.384
+WV,Pearisburg,Bozoo,4778312,37.462,-80.831
+WV,Morgantown,Coopers Rock,4815352,39.641,-79.827
+TN,Chattanooga,Chattanooga vicinity,4612862,35.098,-85.379
+TN,Wartburg,Obed,4665933,36.079,-84.774
+TN,Nashville,King's Bluff,4644585,36.56,-87.487
+TN,Oneida,Big South Fork,4647287,36.371,-84.659
+TN,Dayton,Dayton Pocket,4617536,35.556,-85.043
+VA,Norton,Guest River Gorge,4776585,36.899,-82.42
+VA,Lovingston,Love Nest,4770827,37.774,-79.005
+VA,Madison,Old Rag,4771235,38.551,-78.324
+VA,Charlottesville,Charlottesvile vicinity,4752031,38.0293,-78.4766
+VA,Harrisonburg,Hidden Rocks,4763237,38.459,-79.114
+VA,Roanoke,McAfee's Knob,4782167,37.387,-80.068
+VA,McLean,Great Falls,4772354,39.011,-77.358
+VA,Abingdon,Hidden Valley,4743815,36.846,-82.083
+VA,Independence,Grayson Highlands,4829280,36.621,-81.486
+VA,Grundy,Breaks Interstate Park,4762512,37.286,-82.296
+VA,Richmond,Manchester Wall,4781708,37.524,-77.563
+AL,Fort Payne,Little River Canyon,4062861,34.395,-85.628
+AL,Birmingham,Moss Rock Preserve,4049979,33.381,-86.842
+AL,Oneonta,Horse Pens 40,4081671,33.921,-86.31
+GA,LaFayette,Rocktown,4204241,34.658,-85.391
+GA,Atlanta,Boat Rock,4180439,33.721,-84.566
+GA,Clarkesville,Mount Yonah,4188197,34.637,-83.722
+KY,Campton,Red River Gorge,4286728,37.783,-83.684
+AR,Jasper,Horseshoe Canyon Ranch,4116400,36.004,-93.294
+AR,Ben Hur,Cowell,4105879,35.82,-93.173
+AR,Fayetteville,Fayetteville vicinity,4110486,36.069,-94.232
+MD,Bethesda,Carderock,4348599,38.977,-77.203
+MD,Hagerstown,Annapolis Rock,4357141,39.281,-77.14
+MD,Harper's Ferry,Harper's Ferry,4801850,39.325,-77.75
+SC,Pickens,Upstate SC Vicinity,4590946,34.957,-82.798
+PA,Harrisburg,PA Diabase Areas,5192726,40.244,-76.482
+PA,Birdsboro,Birdsboro Quarry,5180620,40.25,-75.822
+PA,Pittsburgh,SW Pennsylvania vicinity,5206379,40.431,-80.05
+NY,New Paltz,Shawangunks,5128539,41.724,-74.213
+NY,New York,Central Park,5128581,40.769,-73.979
+NY,Tupper Lake,Adirondacks,5141580,44.233,-74.493
+IL,Carbondale,So-Ill vicinity,4235193,37.72,-89.283
+IL,Davenport,Mississippi Palisades,4853423,42.144,-90.171
+WI,Baraboo,Devil's Lake,5244638,43.417,-89.749
+MI,Lansing,Grand Ledge,4998830,42.757,-84.779
+MI,Marquette,Marquette vicinity,5000947,46.61,-87.629
+TX,Dripping Springs,Reimer's Ranch,4686903,30.185,-98.122
+TX,Belton,Roger's Park,4673425,31.043,-97.554
+TX,Waco,Tonkawa Falls,4739526,31.536,-97.433
+TX,Del Rio,Pecos River,5520076,29.377,-100.942
+TX,Fredericksburg,Enchanted Rock,4692279,30.506,-98.827
+TX,Amarillo,Palo Duro Canyon,5516233,34.958,-101.678
+TX,El Paso,Hueco Tanks,5520993,31.916,-106.045
+OH,Akron,Cleveland vicinity,5145476,41.301,-81.685
+OH,Youngstown,Youngstown vicinity,5177568,41.094,-80.709
+OH,Athens,Athens vicinity,4505542,39.323,-82.119
+IN,North Vernon,Muscatatuck State Park,4262318,39.05,-85.537
+IA,Cedar Rapids,Pictured Rocks State Park,4850751,41.965,-91.803
+IA,Dubuque,Backbone State Park,4854529,42.6,-91.535
+MO,Columbia,Columbia vicinity,4381982,38.946,-92.471
+MO,Ironton,Elephant Rocks,4392057,37.654,-90.69
+MO,Kansas City,Kansas City vicinity,4393217,39.091,-94.856
+AZ,Mesquite,Virgin River Gorge,5508180,36.791,-114.214
+AZ,Flagstaff,Flagstaff vicinity,5294810,35.181,-111.678
+AZ,Sedona,Sedona vicinity,5313667,34.854,-111.83
+AZ,Winslow,Jack's Canyon,5321473,35.016,-110.737
+AZ,Phoenix,Queen Creek Canyon,5308655,33.605,-112.405
+AZ,Tucson,Mt. Lemmon,5318313,32.443,-110.796
+AZ,Tombstone,Cochise Stronghold,5317714,31.922,-109.969
+NM,Taos,Taos Vicinity,5493811,36.389,-105.616
+NM,Santa Fe,Santa Fe Vicinity,5490263,35.682,-106.053
+NM,Albuquerque,Sandias,5454711,35.082,-106.816
+NM,Los Alamos,Los Alamos,5476825,35.888081,-106.306969
+NM,Jemez Pueblo,Ponderosa,5473297,35.613918,-106.725868
+NM,Pie Town,Enchanted Tower,5491999,34.223954,-107.939032
+NM,Socorro,Socorro Vicinity,5491999,34.058399,-106.891418
+NM,Truth or Consequences,Truth or Consequences vicinity,5495292,33.191,-107.323
+NM,Las Cruces,Organ Mountains,5475352,32.343,-106.951
+NM,Mosquero,Roy,5480275,35.7769,-103.956642
+NM,Gallup,Gallup Vicinity,5468773,35.52808,-108.742577
+VT,Burlington,Smuggler's Notch,5234372,44.567,-72.83
+VT,Montpelier,Marshfield Ledge,5238685,44.274,-72.638
+VT,Rutland,Killington,5240509,43.627,-72.801
+NH,Durham,Pawtuckaway,5085618,43.077,-71.173
+NH,Rumney,Rumney,5091981,43.802,-71.832
+NH,North Conway,North Conway Vicinity,5090347,44.062,-71.168
+CT,Wallingford,Central Connecticut,4845056,41.456,-72.88
+CT,Waterbury,West Rock,5242565,41.564,-73.095
+CT ,Torrington,Western Connecticut,4844309,41.834,-73.197
+RI,Providence,Lincoln Woods,5224151,41.897,-71.435
+ME,Bar Harbor,Acadia National Park,4957320,44.319,-68.437
+ME,Bethel,Shagg Crag,4958084,44.424,-70.906
+ME,Portland,Great Head,4975802,43.666,-70.281
+MA,Great Barrington,Great Barrington,4938157,42.208,-73.399
+MA,Amherst,Rose Ledge,4929023,42.367,-72.575
+MA,Boston,Boston vicinity,4930956,42.314,-71.11
+OK,Lawton,Wichita Wildlife Refuge,4540737,34.753,-98.799
+OK,Mangum,Quartz Mountain,4542100,34.907,-99.332
+OK,Wilburton,Robber's Cave,4555423,34.996,-95.332
+OK,Tulsa,Chandler Park,4553433,36.133,-96.069
+MN,Worthington,Blue Mounds,5053460,43.634,-95.623
+MN,Red Wing,Red Wing,5042773,44.598,-92.645
+MN,Duluth,Duluth vicinity,5024719,46.764,-92.251
+MN,Silver Bay,Lake Superior Areas,5047308,47.29,-91.314
+SD,Sioux City,Palisades State Park,5231851,42.473,-96.541
+SD,Spearfish,Spearfish Canyon,5769288,44.485,-103.872
+SD,Rapid City,The Needles,5768233,44.069,-103.323
+WY,Gillette,Devil's Tower,5826027,44.59,-104.716
+WY,Laramie,Vedauwoo,5830062,41.154,-105.376
+WY,Casper,Fremont Canyon,5820705,42.515,-106.78
+WY,Lander,Lander Vicinity,5830007,42.752,-108.807
+WY,Pinedale,Wind River Range,5835178,43.183,-109.661
+WY,Buffalo,Ten Sleep,5819881,44.034,-107.463
+WY,Cody,Cody vicinity,5821593,44.519,-109.097
+WY,Driggs,Grand Tetons,5591399,43.807,-110.969
+CO,Boulder,Front Range Areas,5574991,40.029,-105.31
+CO,Golden,Clear Creek Canyon,5423294,39.739,-105.324
+CO,Fort Collins,Poudre Canyon,5577147,40.698,-105.632
+CO,Estes Park,Rocky Mountain National Park,5576882,40.366,-105.568
+CO,Idaho Springs,Mt. Evans,5425911,39.588,-105.652
+CO,Colorado Springs,Shelf Road,5417598,38.628,-105.229
+CO,Rifle,Rifle,5436363,39.728,-107.69
+CO,Grand Junction,Western Slope Areas,5423573,39.085,-108.64
+CO,Durango,Southwest Colorado,5420241,37.272,-107.937
+CO,Ouray,Ouray Vicinity,5433676,38.03,-107.69
+CO,Gunnison,Black Canyon,5424099,38.574,-107.805
+CO,Aspen,Independence Pass,5412230,39.108,-106.572
+UT,Salt Lake City,Salt Lake City vicinity,5780993,40.776,-112.06
+UT,Logan,Logan Canyon,5777544,41.74,-111.802
+UT,Moab,Moab Vicinity,5543307,38.574,-109.586
+UT,St. George,St. George vicinity,5546220,37.104,-113.703
+UT,Moroni,Maple Canyon,5543462,39.555,-111.679
+UT,Orangeville,Joe's Valley,5544402,39.296,-111.299
+UT,Hurricane,Zion National Park,5540831,37.18,-113.041
+UT,Delta,Ibex,5538080,38.881,-113.461
+UT,Orem,American Fork,5779334,40.42,-111.97
+UT,Monticello,Indian Creek,5543377,38.226,-110.181
+NV,Ely,Great Basin National Park,5503694,38.951,-114.315
+NV,Las Vegas,Red Rocks,5506956,36.135,-115.43
+NV,Carson City,Washoe Boulders,5501350,39.167,-119.916
+NV,Fernley,Pyramid Lake areas,5504003,40.022,-119.837
+NV,Eureka,Wild Granites,5503804,39.513,-115.986
+NV,Lamoille,Ruby Mountains,5703670,40.621,-115.483
+NV,Incline Village,Lake Tahoe east shore,5505963,39.254,-119.991
+MT,Bozeman,Hyalite Canyon,5641727,45.521,-111.012
+MT,Big Sky,Gallatin Canyon,5640193,45.261,-111.311
+MT,Helena,Whiskey Gulch,5656882,46.593,-112.05
+MT,Missoula,Missoula vicinity,5666639,46.876,-114.158
+MT,Kalispell,Northwest Montana,5660340,48.211,-114.461
+ID,Idaho Falls,The Fins,5596475,43.72,-113.078
+ID,Twin Falls,Twin Falls vicinity,5610810,42.565,-114.488
+ID,Burley,City of Rocks,5587385,42.078,-113.705
+ID,Boise,Boise vicinity,5586437,43.6,-116.374
+ID,Stanley,Sawtooth Range,5609286,44.168,-115.043
+ID,Grangeville,Riggins,5594474,45.42,-116.338
+ID,Couer D'Alene,Northern Panhandle,5589173,47.701,-116.862
+OR,Bend,Smith Rocks,5713587,44.368,-121.142
+OR,Eugene,Wilamette Valley,5725846,44.06,-123.192
+OR,Portland,Portland vicinity,5746545,45.542,-122.794
+OR,Hood River,Mt. Hood vicinity,5731777,45.705,-121.539
+WA,Leavenworth,Leavenworth,5800683,47.589,-120.678
+WA,Spokane,Spokane vicinity,5811696,47.672,-117.552
+WA,Omak,Vantage,5805734,48.433,-119.589
+WA,Bellingham,Bellingham vicinity,5786899,48.753,-122.531
+WA,North Bend,Little Si,5804915,47.486,-121.756
+WA,Gold Bar,Index,5795678,47.818,-121.572
+WA,Rainier,Mt. Rainier vicinity,5747402,46.852,-121.769
+WA,Yakima,Yakima vicinity,5816605,46.594,-120.618
+WA,Pullman,Southeastern Washington,5807540,46.73,-117.187
+CA,Mount Shasta,Mt. Shasta vicinity,5568295,41.408,-122.202
+CA,Arcata,Humboldt County,5558953,41.03,-124.113
+CA,Truckee,North Lake Tahoe,5403676,39.318,-120.322
+CA,South Lake Tahoe,South Lake Tahoe,5397664,38.922,-120.048
+CA,Oakland,Bay Area Climbing,5378538,37.893,-122.272
+CA,Sonora,Sonora Pass,5397165,38.328,-119.638
+CA,Yosemite Valley,Yosemite National Park,7262586,37.729,-119.636
+CA,Bridgeport,Tuolumne Meadows,5330736,37.872,-119.377
+CA,Mammoth Lakes,Mammoth Lakes vicinity,5370006,37.64,-119.978
+CA,Bishop,Bishop vicinity,5328808,37.366,-118.415
+CA,Visalia,The Needles,5406567,36.109,-118.487
+CA,San Luis Obispo,Central Coast,5392323,35.272,-120.699
+CA,Malibu,Malibu Creek,5369906,34.063,-118.703
+CA,Simi Valley,Stoney Point,5396003,34.274,-118.603
+CA,Riverside,Riverside Quarry,5387877,34.017,-117.42
+CA,Big Bear Lake,Big Bear vicinity,5328163,34.244,-116.937
+CA,Hemet,Tahquitz/Suicide Rock,5356277,33.757,-116.686
+CA,Twentynine Palms,Joshua Tree National Park,5404198,34.014,-116.171
+CA,San Diego,San Diego vicinity,5391811,33.01,-117.015
+AK,Juneau,Juneau vicinity,5554072,58.302,-134.424
+AK,Seward,Kenai Peninsula,5873776,60.105,-149.443
+AK,Palmer,Hatcher Pass,5871146,61.77,-149.33
+AK,Denali,Denali National Park,5860541,63.116,-151.229
+AK,Fairbanks,Fairbanks vicinity,5861897,64.828,-147.809
+AK,Anchorage,Seward Highway,5879400,61.043,-149.785
+HI,Honolulu,Oahu,5856195,21.483,-158.246
+HI,Kahului,Maui,5847411,20.807,-156.453
+Nuevo Leon,Monterrey,El Portrero Chico,3995465,25.842501,-99.616112
+Nuevo Leon,Santiago,El Salto,3983671,25.377437,-100.241675
+Guerrero,Taxco,El Chonta,3516225,18.647932,-99.522583
+Hidalgo,Pachuca,Mineral de Chico,3522210,20.20992,-98.727357
+Chihuahua,Chihuahua,Peñoles,4014338,28.633329,-106.083328
+Jalisco,Guadalajara,Guadalajara Vicinity,8133378,20.086889,-103.309937
+BC,Vancouver,Squamish,6173331,49.710849,-123.126449
+BC,Kelowna,Skaha,5990579,49.883072,-119.48568
+BC,Golden,Bugaboos,5962582,50.74077,-116.782531
+BC,Qualicum Beach,Horne Lake,6114862,49.346828,-124.436058
+AB,Canmore,Canmore Vicinity,7871396,51.08757,-115.346153
+ON,Collingwood,Lions Head,5925975,44.990146,-81.221132
+ON,Thunder Bay,Thunder Bay Vicinity,6166142,48.400101,-89.316833
+QC,Kamouraska,Kamouraska,6325493,47.565929,-69.86631
+QC,Val-David,Val-David,6173001,46.033379,-74.215919
+NS,Halifax,Dover Island,6324729,44.645329,-63.572392
+YT,Fort Simpson,Cirque of the Unclimbables,5955953,62.111091,-127.697273
+Cuba,Pinar del Rio,Viñales,3544091,22.622259,-83.711819
+BVI,Road Town,Virgin Gorda,3577430,18.430884,-64.443288
+PR,Bayamon,Bayamon,4562832,18.17774,-66.11322
+France,Fontainebleau,Fontainebleau,3018074,48.400002,2.7
+France,Chamonix,Chamonix-Mont Blanc,3027301,45.923752,6.86933
+France,Aix-En-Provence,Cote D'Azure,6452134,43.533329,5.43333
+France,Gap,Ceuse,6446644,44.566669,6.08333
+UK,Sheffield,Peak District,2638077,53.382969,-1.4659
+UK,Fort William,Scottish Highlands,2649169,56.816479,-5.11208
+UK,Llanberis,North Wales,2644172,53.119221,-4.13017
+Spain,Corudella de Montsant,Siurana,6361292,41.26387,0.92856
+Spain,Margalef,Margalef,6361318,41.303661,0.78046
+Spain,Chulilla,Chulilla,6361977,39.651348,-0.85005
+Spain,Rodellar,Rodellar,3111456,42.28249,-0.07858
+Spain,Jaen,Jaen,2516395,37.76667,-3.78333
+Portugal,Sagres,Sagres,2263650,37.00864,-8.94311
+Sweden,Gothenburg,Gothenburg Vicinity,2711537,57.707161,11.96679
+Sweden,Vastervik,Vastervik,2664203,57.7584,16.637329
+Norway,Bergen,Loddefjord,3161733,60.391998,5.328
+Norway,Trondheim,Flatanger,3133881,63.428108,10.39687
+Norway,Svolvaer,Lofoten Islands,3135020,68.234169,14.56834
+Norway,Tromso,Tromso,3133895,69.648903,18.95508
+Finland,Helsinki,Helsinki Vicinity,658225,60.169521,24.93545
+Poland,Krakow,Podlesice,3094802,50.083328,19.91667
+Germany,Erlangen,Frankenjura,2929567,49.589722,11.00389
+Germany,Garmisch,Schleierwasserfall,2922530,47.492088,11.09576
+Switzerland,Biasca,Chironico,2661524,46.359718,8.96965
+Switzerland,Grindelwald,Grindelwald,7285984,46.619068,8.05098
+Switzerland,Lauterbrunnen,Lauterbrunnen,2659992,46.59568,7.90765
+Switzerland,Thusis,Magic Wood,7287310,46.688541,9.43282
+Switzerland,Schiers,Ratikon,7287084,46.992329,9.74605
+Austria,Innsbruck,Tirol,2775220,47.262661,11.39454
+Austria,Zell am Ziller,Zillertal,7873713,47.22982,11.88535
+Austria,Oetz,Otztal,7873593,47.203259,10.90793
+Austria,Burs,Burs,7872644,47.124199,9.79679
+Belgium,Namur,Freyr,2790471,50.4669,4.86746
+Ireland,Ballycastle,Fairhead,2966646,54.283329,-9.36667
+Croatia,Obrovac,Paklenica,3194245,44.200562,15.68222
+Croatia,Kompanj,Kompanj,3202942,45.409439,13.96667
+Greece,Kalymnos,Kalymnos,261507,36.950001,26.98333
+Greece,Leonidio,Leonidio,258500,37.16679,22.857731
+Italy,Rovereto,Arco,6539916,45.889599,11.03868
+Italy,San Vito lo Capo,San Vito lo Capo,2523238,38.172352,12.73493
+Italy,Bolsano,Dolomites,3181913,46.492722,11.33358
+Italy,Finale Ligure,Finale Ligure,3176982,44.169521,8.3436
+Malta,Victoria,Gozo,2562619,36.044441,14.23972
+Denmark,Bornholm,Bornholm,2623665,55.166672,15
+Czech Republic,Usti nad Labem,Labske Udoli,3063548,50.660702,14.03227
+Slovenia,Koper,Osp,3197753,45.54694,13.72944
+Turkey,Antalya,Geyikbeyiri,323776,36.962923,30.486353
+Jordan,Eilat,Wadi Rum,295277,29.55805,34.948212
+Israel,Haifa,Haifa,294801,32.815559,34.98917
+Lebanon,Tripoli,Tannourine,266826,34.436668,35.84972
+Iran,Hamadan,Hamadan,132144,34.799221,48.514561
+South Africa,Cape Town,Cape Town Vicinity,3369157,-33.925838,18.42322
+South Africa,Paarl,Rocklands,3363094,-32.134558,19.003725
+South Africa,Nelspruit,Waterval Boven,971534,-25.653604,30.329857
+Mali,Timbuktu,Main de Fatima,2449067,16.773479,-3.00742
+Morocco,Azilal,Taghia Gorge,6545434,31.78274,-6.068285
+India,Hampi,Hampi,1270448,15.33333,76.466667
+Thailand,Krabi,Tonsai,1152633,8.07257,98.910522
+Thailand,Chiang Mai,Chiang Mai,1153671,18.79038,98.98468
+Thailand,Ko Tao,Ko Tao,6698659,10.09808,99.838089
+Laos,Thakek,Thakek,1653316,16.565981,104.7509
+Vietnam,Ha Long,Ha Long Bay,1580410,20.951111,107.080002
+China,Yangshuo,Yangshuo,1787323,24.780809,110.48967
+China,Baoshan,Liming,1281673,24.347322,99.675039
+China,Hong Kong,Hong Kong Vicinity,1819729,22.285521,114.157692
+South Korea,Seoul,Seoul Vicinity,1835848,37.56826,126.977829
+Japan,Kofu,Ogawayama,1859100,35.663891,138.568329
+Japan,Hachioji,Mitake,1863440,35.65583,139.323883
+Japan,Nakatsugawa,Ena,1855753,35.48333,137.5
+Australia,Stawell,Grampians,2148431,-37.049999,142.766663
+Australia,Horsham,Arapiles,7839554,-36.828571,142.114487
+Australia,Mount Victoria,Blue Mountains,2156501,-33.583328,150.25
+Australia,Koonya,Tasmania,2161105,-43.049999,147.850006
+New Zealand,Lake Coleridge,Castle Hill,2188540,-43.202469,171.737987
+New Zealand,Christchurch,Christchurch Vicinity,2192362,-43.533329,172.633331
+Colombia,Aguachica,La Mojarra,3690465,8.30844,-73.6166
+Colombia,Suesca,Suesca,3667717,5.10289,-73.798447
+Ecuador,Cuenca,Cojitambo,3658666,-2.88333,-78.98333
+Brazil,Belo Horizonte,Serra do Cipo,6321162,-19.356724,-43.629523
+Brazil,Rio de Janeiro,Rio de Janeiro Vicinity,3451190,-22.902781,-43.2075
+Brazil,Ubatuba,Ubatuba,6322637,-23.42621,-45.036331
+Peru,Huaraz,Huaraz,3696378,-9.53333,-77.533333
+Peru,Cusco,Pitumarca,3941584,-14.004103,-71.421853
+Chile,Puerto Montt,Cochamo,3874960,-41.469849,-72.94474
+Chile,Linares,Valle de los Condores,3883167,-35.849998,-71.599998
+Chile,Santiago,Santiago Vicinity,3871336,-33.45694,-70.64827
+Chile,Puerto Natales,Torres Del Paine,3874958,-51.723629,-72.48745
+Argentina,San Carlos de Bariloche,Bariloche,3837856,-41.150002,-71.300003
+Argentina,El Calafate,El Chalten,3858677,-50.340752,-72.276817
+Argentina,Mendoza,Los Arenales,3844421,-32.890839,-68.827171

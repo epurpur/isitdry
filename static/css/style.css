@@ -1,0 +1,239 @@
+/*~~~~~~~~~~~~~~~~~*/
+/*  GLOBAL STYLES  */ 
+/*~~~~~~~~~~~~~~~~~*/
+
+html {
+    background-color: #dedede;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+body {
+    margin: 0;
+}
+
+.body-section {
+    list-style: none;
+}
+
+.footer-section {
+    list-style: none;
+}
+
+.header-section {
+    list-style: none;
+}
+
+/*~~~~~~~~~~~~~~~~~*/
+/*    HEADER       */ 
+/*~~~~~~~~~~~~~~~~~*/
+
+header {
+    padding: 15px;
+    text-align: center;
+    background-color: #f5f4f7;
+    height: auto;
+}
+
+header h1 {
+    font-weight: 900;
+    color: #000;
+    margin: 0;
+    font-size: 200%;
+}
+
+nav a {
+    outline: none;
+    text-decoration: none;
+    opacity: .6;
+    padding: 0 5px;
+    color: black;
+    transition: opacity .2s ease-in-out;
+    font-size: 130%;
+}
+
+/* style for when hovering over header item */
+nav a:hover,
+nav a:focus {
+  opacity: 1;
+}
+
+/*~~~~~~~~~~~~~~~~~*/
+/*      MAIN       */ 
+/*~~~~~~~~~~~~~~~~~*/
+
+div .top-div {
+    margin-top: 5px;
+    height: 25px;
+}
+
+div .main {
+    padding: 10px;
+}
+
+div .content-div {
+    width: 100%;
+    background-color: azure;
+    float: left;
+    margin-right: 5px;
+}
+
+.map {
+    height: 600px; 
+    width: 100%;
+}
+
+/*~~~~~~~~~~~~~~~~~*/
+/*     FOOTER      */ 
+/*~~~~~~~~~~~~~~~~~*/
+
+h2 {
+    font-family: "Lato";
+    padding-left: 1%;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~*/
+/* WEATHER FORECAST PAGE */ 
+/*~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.overview-info {
+    padding-top: 1%;
+    padding-bottom: 0%;
+    padding-right: 1%;
+    padding-left: 1%;
+    height: 350px;
+}
+
+.location-information {
+    display: inline-block;
+    width: 49%;
+    height: 98%;
+}
+
+.location-header {
+    font-size: 40px;
+    font-family: "Lato";
+}
+
+.location-item {
+    display: inline-block;
+    font-family: "Lato";
+    font-size: 22px;
+    padding-left: 1%;
+    width: 100%;
+}
+
+#map-inset {
+    float: right;
+    width: 50%;
+    height: 98%;
+    background-color: azure;
+    padding-right: 1%;
+}
+
+.column {
+    float: left;
+    width: 13.8%;
+    height: 410px;
+    margin-left: 2px;
+    margin-right: 2px;
+    background-color: darkgray;
+}
+
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+img {
+    display: block;
+    margin: 0 auto;  /*center aligns images */
+    height: 30%;
+    width: 75%;
+    text-align: center;
+    padding-top: 5%;
+}
+
+.date-text {
+    text-align: center;
+    color: darkblue;
+    font-weight: bold;
+}
+
+.date-subtext {
+    font-size: 12px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.forecast-info {
+    padding-left: 2%;
+    font-size: 16px;
+    font-family: "Lato";
+}
+
+
+
+/*~~~~~~~~~~~~~~~~~*/
+/*  CONTACT PAGE   */ 
+/*~~~~~~~~~~~~~~~~~*/
+
+.parent {
+    width: 100%;
+    height: 375px;
+    padding-left: 1%;
+}
+
+.block1 {
+    display: inline-block;
+    float: left;
+    width: 65%;
+    height: 55%;
+    padding-left: 1%;
+}
+
+.block2 {
+    display: inline-block;
+    float: left;
+    width: 30%;
+    height: 100%;
+    padding-left: 1%;
+}
+
+
+.head-shot {
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+}
+
+#personal-bio {
+    font-family: "Lato";
+    font-size: 25px; 
+    height: 20%;
+}
+
+#reasons {
+    padding-left: 15%;
+    font-size: 19px;
+}
+
+.github-contact {
+    width: 35%;
+    float: left;
+    display: inline-block;
+}
+
+.github-icon {
+    width: 45px;
+    height: 45px;
+    display: inline-block;
+    float: left;
+    padding-top: 1%;
+}

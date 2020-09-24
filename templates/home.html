@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<!-- Inherits all code outside <body> tag from index.html -->
+{% extends "layout.html" %}
+
+{% block content %}
+
+    <div class="main">
+        
+        <div class="top-div">
+            <p>Click climbing area to see weather forecast</p>
+        </div>
+        
+        
+        <div class="content-div"> 
+            <div id="map" class="map"></div>
+            
+            <script>
+            function initMap() {
+                // Initializes google maps in window
+                var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 3,
+                center: {lat: 40.028, lng: -97.665}
+                });
+
+                setMarkers(map);
+            }
+
+
+            function setMarkers(map) {
+            // Adds markers to the map.
+
+            // Marker sizes are expressed as a Size of X,Y where the origin of the image
+            // (0,0) is located in the top left of the image.
+
+            // Origins, anchor positions and coordinates of the marker increase in the X
+            // direction to the right and in the Y direction down.
+                var image = {
+                    url: "http://maps.google.com/mapfiles/ms/icons/purple-dot.png",
+                    // This marker is 20 pixels wide by 32 pixels high.
+                    size: new google.maps.Size(40, 40),
+                    // The origin for this image is (0, 0).
+                    origin: new google.maps.Point(0, 0),
+                    // The anchor for this image is the base of the flagpole at (0, 32).
+                    anchor: new google.maps.Point(0, 32)
+                };
+                // Shapes define the clickable region of the icon. The type defines an HTML
+                // <area> element 'poly' which traces out a polygon as a series of X,Y points.
+                // The final coordinate closes the poly by connecting to the first coordinate.
+
+
+                {% for site in sites %}   //iterate through each site using python loop instead of javascript loop
+                    var site = site;
+
+                    var content_string = '<div id="content">'+
+                        '</div>'+
+                        '<h1 id="header"> {{ site[2] }} </h1>' +
+                        '<div id="bodyContent">'+
+                        '<p>State: {{ site[0] }} </p>'+
+                        '<p>Weather Site: {{ site[1] }}</p>' +
+                        '<p>Location: ({{ site[4] }}, {{ site[5] }})</p>' +
+                        '<p> <a href="/weather_forecast/{{ site[2] }}/{{ site[3] }}/{{ site[4] }}/{{ site[5] }}/{{ site[1] }}"> See Forecast </a> </p>'
+                        '</div>';
+                        // the <a> tag is what passes variables back to weather_app_main.py
+
+                    var marker = new google.maps.Marker({                             //place marker at site lat/lon
+                        position: {lat: {{ site[4] }}, lng: {{ site[5] }} },
+                        map: map,
+                        icon: image
+                        });
+
+                    marker.content = content_string;    // add content as property to marker object
+
+
+                    var info_window = new google.maps.InfoWindow();
+
+                    google.maps.event.addListener(marker, 'click', function() {
+                                                info_window.setContent(this.content);
+                                                info_window.open(map, this);
+                    });
+
+              {% endfor %}
+            }
+
+            </script>
+
+            <script src="https://maps.googleapis.com/maps/api/js?key={{ config['GOOGLE_MAPS_JS_API_KEY'] }}&callback=initMap" async defer></script>
+
+            
+            
+        </div>
+
+    </div>
+
+    
+
+{% endblock content %}
