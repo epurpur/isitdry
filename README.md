@@ -36,7 +36,7 @@ Climbing Weather Forecast application I built in order to learn the python flask
         
             -variable called OPENWEATHERMAP_API_KEY
         
--lastly, set environment variables locally following this example:
+-lastly, set environment variables locally for each of the 3 API keys following this example:
 
     - export GOOGLE_MAPS_JS_API_KEY='your api key'
     
