@@ -8,11 +8,17 @@ Climbing Weather Forecast application I built in order to learn the python flask
 
 -clone repository
 -start virtual environment using the following:
+
         ` python -m venv env  ` 
+        
         - This will create a new 'env' environment folder in your directory
+        
         - Build your dependencies from requirements.txt file:
+        
             - ` pip3 install -r requirements.txt`
+            
         - To start this virtual environment, run:
+        
             - `source env/bin/activate`
 
 -set environment variables locally (available in Heroku dashboard)
