@@ -39,5 +39,14 @@ Climbing Weather Forecast application I built in order to learn the python flask
 -lastly, set environment variables locally following this example:
 
     - export GOOGLE_MAPS_JS_API_KEY='your api key'
+    
+    
+-Finally, to run the app locally:
+
+    - python app.py
+    
+        or
+        
+    - flask run
         
     
