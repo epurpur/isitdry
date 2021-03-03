@@ -54,5 +54,5 @@ def weather_forecast(climbing_area, city_id, lat, lon, weather_site):
 
 
 if __name__ == "__main__":
-    app.run()    
+    app.run(debug=True)    
 
