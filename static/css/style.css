@@ -141,50 +141,68 @@ footer a:focus {
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 .overview-info {
-    padding-top: 1%;
-    padding-bottom: 0%;
-    padding-right: 1%;
-    padding-left: 1%;
+    display: flex;
     height: 350px;
 }
 
 .location-information {
-    display: inline-block;
-    width: 49%;
-    height: 98%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5px;
+    font-family: 'Jura', sans-serif;
+    background-color:rgb(150, 150, 150);
+    border-radius: 5px;
+    padding-bottom: 40px;
+    margin: 10px 10px 10px 0px;
 }
 
-.location-header {
-    font-size: 40px;
-    font-family: "Lato";
+#location-header {
+    font-size: 45px;
+    border: 3px solid black;
+    border-radius: 5px;
+    position: relative;
+    top: 25px;
 }
 
-.location-item {
-    display: inline-block;
-    font-family: "Lato";
-    font-size: 22px;
-    padding-left: 1%;
-    width: 100%;
+.location-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    position: relative;
+    bottom: 15px;
+}
+
+.fixed-text {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
 }
 
 #map-inset {
-    float: right;
     width: 50%;
-    height: 98%;
-    background-color: azure;
-    padding-right: 1%;
+    border: .5px solid black;
+    border-radius: 5px;
+    margin: 10px 0 10px 0;
+}
+
+.weather-forecast-rows {
+    width: 100%;
+    display: flex;
+    align-items: space-evenly;
 }
 
 .column {
     float: left;
-    width: 13.8%;
+    width: 13.95%;
     height: 410px;
-    margin-left: 2px;
-    margin-right: 2px;
-    background-color: darkgray;
+    background-color:rgb(150, 150, 150);
+    border-radius: 5px;
+    margin: 2px;
 }
-
-
 
 /* Clear floats after the columns */
 .row:after {
@@ -200,6 +218,7 @@ img {
     width: 75%;
     text-align: center;
     padding-top: 5%;
+    border-radius: 8px;
 }
 
 .date-text {
