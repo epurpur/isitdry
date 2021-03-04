@@ -96,79 +96,90 @@
         </section>
     </section>
 
-
-
-    
-    <section class="row">
+    <section class="weather-forecast-rows">
         <div class="column">
             <img src="{{ wf.image_choice(lat, lon, city_id)[0] }}" alt="daily weather image">
-            <p class="date-text"> {{ dates[0] }} </p>
+            <p class="date-text">{{ dates[0] }}</p>
             <p class="date-subtext"> Two Days Ago </p>
-            <p class="forecast-info"><em>Hi Temp: </em> {{ wf.get_historical_weather(lat, lon)[0][2][1] }} </p>
-            <p class="forecast-info"><em>Lo Temp: </em> {{ wf.get_historical_weather(lat, lon)[0][2][0] }} </p>
-            <p class="forecast-info"><em>Daily Precip: </em> {{ wf.get_historical_weather(lat, lon)[0][0] }} in </p>
-            <p class="forecast-info"><em>Avg Wind: </em> {{ wf.get_historical_weather(lat, lon)[0][1] }} mph </p> 
-            <p class="forecast-info"><em>Humidity: </em> {{ wf.get_historical_weather(lat, lon)[0][3] }}% </p>
+            <div class="cards">
+                <p class="forecast-info"><em>Hi Temp: </em> {{ wf.get_historical_weather(lat, lon)[0][2][1] }} </p>
+                <p class="forecast-info"><em>Lo Temp: </em> {{ wf.get_historical_weather(lat, lon)[0][2][0] }} </p>
+                <p class="forecast-info"><em>Daily Precip: </em> {{ wf.get_historical_weather(lat, lon)[0][0] }} in </p>
+                <p class="forecast-info"><em>Avg Wind: </em> {{ wf.get_historical_weather(lat, lon)[0][1] }} mph </p> 
+                <p class="forecast-info"><em>Humidity: </em> {{ wf.get_historical_weather(lat, lon)[0][3] }}% </p>
+            </div>
         </div>
         <div class="column">
             <img src="{{ wf.image_choice(lat, lon, city_id)[1] }}" alt="daily weather image">
-                <p class="date-text"> {{ dates[1] }} </p>
-                <p class="date-subtext"> Yesterday </p>
+            <p class="date-text"> {{ dates[1] }} </p>
+            <p class="date-subtext"> Yesterday </p>
+            <div class="cards">
                 <p class="forecast-info"><em>Hi Temp: </em> {{ wf.get_historical_weather(lat, lon)[1][2][1] }} </p>
                 <p class="forecast-info"><em>Lo Temp: </em> {{ wf.get_historical_weather(lat, lon)[1][2][0] }} </p>
                 <p class="forecast-info"><em>Daily Precip: </em> {{ wf.get_historical_weather(lat, lon)[1][0] }} in </p>
                 <p class="forecast-info"><em>Avg Wind: </em> {{ wf.get_historical_weather(lat, lon)[1][1] }} mph </p> 
                 <p class="forecast-info"><em>Humidity: </em> {{ wf.get_historical_weather(lat, lon)[1][3] }}% </p>
+            </div>
         </div>
         <div class="column">
             <img src="{{ wf.image_choice(lat, lon, city_id)[2] }}" alt="daily weather image">
             <p class="date-text"> {{ dates[2] }} </p>
             <p class="date-subtext"> Today </p>
-            <p class="forecast-info"><em>Hi Temp: </em> {{ wf.format_daily_forecast(city_id)[0][0] }} </p>
-            <p class="forecast-info"><em>Lo Temp: </em> {{ wf.format_daily_forecast(city_id)[0][1] }} </p>
-            <p class="forecast-info"><em>Daily Precip: </em> {{ wf.format_daily_forecast(city_id)[0][2] }} in </p>
-            <p class="forecast-info"><em>Avg Wind: </em> {{ wf.format_daily_forecast(city_id)[0][3] }} mph </p>
-            <p class="forecast-info"><em>Humidity: </em>{{ wf.format_daily_forecast(city_id)[0][4] }}% </p>
+            <div class="cards">
+                <p class="forecast-info"><em>Hi Temp: </em> {{ wf.format_daily_forecast(city_id)[0][0] }} </p>
+                <p class="forecast-info"><em>Lo Temp: </em> {{ wf.format_daily_forecast(city_id)[0][1] }} </p>
+                <p class="forecast-info"><em>Daily Precip: </em> {{ wf.format_daily_forecast(city_id)[0][2] }} in </p>
+                <p class="forecast-info"><em>Avg Wind: </em> {{ wf.format_daily_forecast(city_id)[0][3] }} mph </p>
+                <p class="forecast-info"><em>Humidity: </em>{{ wf.format_daily_forecast(city_id)[0][4] }}% </p>
+            </div>
         </div>
         <div class="column">
             <img src="{{ wf.image_choice(lat, lon, city_id)[3] }}" alt="daily weather image">
             <p class="date-text"> {{ dates[3] }} </p>
             <p class="date-subtext"> Tomorrow </p>
-            <p class="forecast-info"><em>Hi Temp: </em> {{ wf.format_extended_forecast(city_id)[0][0] }} </p>
-            <p class="forecast-info"><em>Lo Temp: </em> {{ wf.format_extended_forecast(city_id)[0][1] }} </p>
-            <p class="forecast-info"><em>Daily Precip: </em> {{ wf.format_extended_forecast(city_id)[0][2] }} in </p>
-            <p class="forecast-info"><em>Avg Wind: </em> {{ wf.format_extended_forecast(city_id)[0][3] }} mph </p>
-            <p class="forecast-info"><em>Humidity: </em> {{ wf.format_extended_forecast(city_id)[0][4] }}% </p>
+            <div class="cards">
+                <p class="forecast-info"><em>Hi Temp: </em> {{ wf.format_extended_forecast(city_id)[0][0] }} </p>
+                <p class="forecast-info"><em>Lo Temp: </em> {{ wf.format_extended_forecast(city_id)[0][1] }} </p>
+                <p class="forecast-info"><em>Daily Precip: </em> {{ wf.format_extended_forecast(city_id)[0][2] }} in </p>
+                <p class="forecast-info"><em>Avg Wind: </em> {{ wf.format_extended_forecast(city_id)[0][3] }} mph </p>
+                <p class="forecast-info"><em>Humidity: </em> {{ wf.format_extended_forecast(city_id)[0][4] }}% </p>
+            </div>
         </div>
         <div class="column">
             <img src="{{ wf.image_choice(lat, lon, city_id)[4] }}" alt="daily weather image">
             <p class="date-text"> {{ dates[4] }} </p>
             <p class="date-subtext"> Two Days From Now </p>
-            <p class="forecast-info"><em>Hi Temp: </em> {{ wf.format_extended_forecast(city_id)[1][0] }} </p>
-            <p class="forecast-info"><em>Lo Temp: </em> {{ wf.format_extended_forecast(city_id)[1][1] }} </p>
-            <p class="forecast-info"><em>Daily Precip: </em> {{ wf.format_extended_forecast(city_id)[1][2] }} in</p>
-            <p class="forecast-info"><em>Avg Wind: </em> {{ wf.format_extended_forecast(city_id)[1][3] }} mph </p>
-            <p class="forecast-info"><em>Humidity: </em> {{ wf.format_extended_forecast(city_id)[1][4] }}% </p>
+            <div class="cards">
+                <p class="forecast-info"><em>Hi Temp: </em> {{ wf.format_extended_forecast(city_id)[1][0] }} </p>
+                <p class="forecast-info"><em>Lo Temp: </em> {{ wf.format_extended_forecast(city_id)[1][1] }} </p>
+                <p class="forecast-info"><em>Daily Precip: </em> {{ wf.format_extended_forecast(city_id)[1][2] }} in</p>
+                <p class="forecast-info"><em>Avg Wind: </em> {{ wf.format_extended_forecast(city_id)[1][3] }} mph </p>
+                <p class="forecast-info"><em>Humidity: </em> {{ wf.format_extended_forecast(city_id)[1][4] }}% </p>
+            </div>
         </div>
         <div class="column">
             <img src="{{ wf.image_choice(lat, lon, city_id)[5] }}" alt="daily weather image">
             <p class="date-text"> {{ dates[5] }} </p>
             <p class="date-subtext"> Three Days From Now </p>
-            <p class="forecast-info"><em>Hi Temp: </em> {{ wf.format_extended_forecast(city_id)[2][0] }} </p>
-            <p class="forecast-info"><em>Lo Temp: </em> {{ wf.format_extended_forecast(city_id)[2][1] }} </p>
-            <p class="forecast-info"><em>Daily Precip: </em> {{ wf.format_extended_forecast(city_id)[2][2] }} in</p>
-            <p class="forecast-info"><em>Avg Wind: </em> {{ wf.format_extended_forecast(city_id)[2][3] }} mph </p>
-            <p class="forecast-info"><em>Humidity: </em> {{ wf.format_extended_forecast(city_id)[2][4] }}% </p>
+            <div class="cards">
+                <p class="forecast-info"><em>Hi Temp: </em> {{ wf.format_extended_forecast(city_id)[2][0] }} </p>
+                <p class="forecast-info"><em>Lo Temp: </em> {{ wf.format_extended_forecast(city_id)[2][1] }} </p>
+                <p class="forecast-info"><em>Daily Precip: </em> {{ wf.format_extended_forecast(city_id)[2][2] }} in</p>
+                <p class="forecast-info"><em>Avg Wind: </em> {{ wf.format_extended_forecast(city_id)[2][3] }} mph </p>
+                <p class="forecast-info"><em>Humidity: </em> {{ wf.format_extended_forecast(city_id)[2][4] }}% </p>
+            </div>
         </div>
         <div class="column">
             <img src="{{ wf.image_choice(lat, lon, city_id)[6] }}" alt="daily weather image">
             <p class="date-text"> {{ dates[6] }} </p>
             <p class="date-subtext"> Four Days From Now </p>
-            <p class="forecast-info"><em>Hi Temp: </em> {{ wf.format_extended_forecast(city_id)[3][0] }} </p>
-            <p class="forecast-info"><em>Lo Temp: </em> {{ wf.format_extended_forecast(city_id)[3][1] }} </p>
-            <p class="forecast-info"><em>Daily Precip: </em> {{ wf.format_extended_forecast(city_id)[3][2] }} in</p>
-            <p class="forecast-info"><em>Avg Wind: </em> {{ wf.format_extended_forecast(city_id)[3][3] }} mph </p>
-            <p class="forecast-info"><em>Humidity: </em> {{ wf.format_extended_forecast(city_id)[3][4] }}% </p>
+            <div class="cards">
+                <p class="forecast-info"><em>Hi Temp: </em> {{ wf.format_extended_forecast(city_id)[3][0] }} </p>
+                <p class="forecast-info"><em>Lo Temp: </em> {{ wf.format_extended_forecast(city_id)[3][1] }} </p>
+                <p class="forecast-info"><em>Daily Precip: </em> {{ wf.format_extended_forecast(city_id)[3][2] }} in</p>
+                <p class="forecast-info"><em>Avg Wind: </em> {{ wf.format_extended_forecast(city_id)[3][3] }} mph </p>
+                <p class="forecast-info"><em>Humidity: </em> {{ wf.format_extended_forecast(city_id)[3][4] }}% </p>
+            </div>
         </div>
             
     </section>
