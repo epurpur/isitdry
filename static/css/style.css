@@ -7,7 +7,12 @@
 
 
 :root {
+    --header-footer-color: #9f96b1;
+    --background-color: azure;
+    --box-color: rgb(150, 150, 150);
 
+    --header-font: 'Permanent Marker', cursive;
+    --main-font: 'Jura', sans-serif
 }
 
 
@@ -17,8 +22,7 @@
 
 * {
     color: black;
-    font-family: 'Jura', sans-serif;
-    border: 1px solid black;
+    font-family: var(--main-font);
 }
 
 /*~~~~~~~~~~~~~~~~~*/
@@ -28,20 +32,20 @@
 header {
     padding: 15px;
     text-align: center;
-    background-color: #9f96b1;
+    background-color: var(--header-footer-color);
     border-radius: 5px;
     padding-bottom: 5px;
     height: 140px;
 }
 
 header h1 {
-    font-family: 'Permanent Marker', cursive;
+    font-family: var(--header-font);
     font-size: 45px;
     margin: 0;
 }
 
 header h2 {
-    font-family: 'Permanent Marker', cursive;
+    font-family: var(--header-font);
     font-size: 20px;
     margin: 0;
     padding: 0;
@@ -66,7 +70,7 @@ nav a:focus {
 /*      BODY       */ 
 /*~~~~~~~~~~~~~~~~~*/
 body {
-    background-color: azure;
+    background-color: var(--background-color);
 }
 
 /*~~~~~~~~~~~~~~~~~*/
@@ -83,8 +87,7 @@ main {
 /*~~~~~~~~~~~~~~~~~*/
 
 footer {
-    background-color: #9f96b1;
-    font-family: 'Amatic SC', cursive;
+    background-color: var(--header-footer-color);
     height: 50px;
     border-radius: 5px;
     display: flex;
@@ -153,7 +156,6 @@ footer a:focus {
     justify-content: space-evenly;
     align-items: center;
     padding: 5px;
-    font-family: 'Jura', sans-serif;
     background-color:rgb(150, 150, 150);
     border-radius: 5px;
     padding-bottom: 40px;
@@ -170,17 +172,27 @@ footer a:focus {
 
 .location-title {
     display: flex;
-    justify-content: center;
     align-items: center;
     font-size: 23px;
     position: relative;
     bottom: 15px;
 }
 
+#location {
+    position: relative;
+    left: 26px;
+}
+
+#weather-site {
+    position: relative;
+    right: 25px;
+}
+
 .fixed-text {
     border: 1px solid black;
     border-radius: 5px;
     padding: 5px;
+    margin-right: 5px;
 }
 
 #map-inset {
@@ -201,7 +213,7 @@ footer a:focus {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color:rgb(150, 150, 150);
+    background-color: var(--box-color);
     border-radius: 10px;
     margin: 2px;
 }
@@ -219,53 +231,9 @@ img {
     justify-content: flex-start;
 }
 
-/*
-.column {
-    float: left;
-    width: 13.95%;
-    height: 410px;
-    background-color:rgb(150, 150, 150);
-    border-radius: 5px;
-    margin: 2px;
-}
-
-/* Clear floats after the columns */
-/*
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-
-img {
-    display: block;
-    margin: 0 auto;  
-    height: 100px;
-    width: 75%;
-    text-align: center;
-    padding-top: 15px;;
-    border-radius: 8px;
-}
-
-.date-text {
-    text-align: center;
-    color: darkblue;
-    font-weight: bold;
-}
-
 .date-subtext {
-    font-size: 12px;
-    text-align: center;
-    font-weight: bold;
+    border-bottom: 1px solid black;
 }
-
-.forecast-info {
-    padding-left: 2%;
-    font-size: 16px;
-    font-family: "Lato";
-}
-*/
 
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
@@ -284,7 +252,7 @@ img {
     justify-content: center;
     padding: 5px;
     margin: 10px;
-    background-color: rgb(150, 150, 150);
+    background-color: var(--box-color);
     font-size: 25px;
     border-radius: 10px;
 }
@@ -314,12 +282,12 @@ li {
     width: 50px;
     height: 50px;
     padding: 10px;
-    background-color:rgb(150, 150, 150);
+    background-color: var(--box-color);
     transition: background-color .2s ease-in-out;
 }
 
 .contact-image:hover {
-    background-color: azure;
+    background-color: var(--background-color);
     border-radius: 5px;
 }
 
@@ -331,7 +299,7 @@ li {
 }
 
 #img-container img {
-    height: 390px;
+    height: 410px;
     width: 95%;
     margin: 0;
     padding: 0;

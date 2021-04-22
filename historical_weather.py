@@ -1,9 +1,8 @@
-
-
 import requests
 import json
 from datetime import datetime, timedelta
 import os
+
 
 
 def define_dates():
@@ -29,6 +28,7 @@ def get_historical_weather(lat, lon):
     wind speed is measured in miles per hour
     temperature is measures in degrees Fahrenheit"""
     
+
     key = os.environ.get('CLIMACELL_API_KEY')
     url = "https://api.climacell.co/v3/weather/historical/station"
 
@@ -51,7 +51,7 @@ def get_historical_weather(lat, lon):
     return weather_data_by_day
 
 
-get_historical_weather(38.459, -79.113)
+
 
 
 

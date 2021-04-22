@@ -102,7 +102,7 @@ def format_daily_forecast(city_id):
             
             final_daily_stats.append((daily_hi, daily_lo, daily_precip, daily_wind, daily_humidity))
         
-            print(final_daily_stats)
+            # print(final_daily_stats)
             return final_daily_stats
 
         else:
@@ -255,10 +255,9 @@ def format_extended_forecast(city_id):
     avg_humidity_4 = round((sum(humidity_day_4) / len(humidity_day_4)), 2)
     final_daily_stats.append((max4, min4, precip4, avg_wind_4, avg_humidity_4))
     
-    print(final_daily_stats)
+    # print(final_daily_stats)
 
     return final_daily_stats
-
 
 
 
@@ -282,27 +281,29 @@ def get_historical_weather(lat, lon):
         if len(data) == 2:
             return data
         else: 
-            data = [(0.0, 0.0, (0.0, 0.0), 0.0), (0.0, 0.0, (0.0, 0.0), 0.0)]
+            data = [(1.0, 0.0, (0.0, 0.0), 0.0), (0.0, 0.0, (0.0, 0.0), 0.0)]
             return data
     
     except TypeError:
         
-        data = [(0.0, 0.0, (0.0, 0.0), 0.0), (0.0, 0.0, (0.0, 0.0), 0.0)]
+        data = [(2.0, 0.0, (0.0, 0.0), 0.0), (0.0, 0.0, (0.0, 0.0), 0.0)]
 
         return data
 
     except IndexError:    #historical temps are not returned, resulting in an index error
 
-        data = [(0.0, 0.0, (0.0, 0.0), 0.0), (0.0, 0.0, (0.0, 0.0), 0.0)]
+        data = [(3.0, 0.0, (0.0, 0.0), 0.0), (0.0, 0.0, (0.0, 0.0), 0.0)]
 
         return data
 
     except ZeroDivisionError:  #no historical weather data for some reason
 
-        data = [(0.0, 0.0, (0.0, 0.0), 0.0), (0.0, 0.0, (0.0, 0.0), 0.0)]
+        data = [(4.0, 0.0, (0.0, 0.0), 0.0), (0.0, 0.0, (0.0, 0.0), 0.0)]
 
         return data
         
+
+# # get_historical_weather(35.045631, -85.309677)
 
 
 def get_date_range():
@@ -342,7 +343,8 @@ def image_choice(lat, lon, city_id):
     daily weather and return url string for use in object 
     """
 
-    historical_weather = get_historical_weather(lat, lon)
+    historical_weather = get_historical_weather(lat, lon)   # this is what is should look like: [(2.0, 0.0, (0.0, 0.0), 0.0), (0.0, 0.0, (0.0, 0.0), 0.0)]
+
     #this is a reorganized tuple so it matches the format of the daily_forecast and extended_forecast
     historical_weather = [(historical_weather[0][2][1], historical_weather[0][2][0], historical_weather[0][0], historical_weather[0][1], historical_weather[0][3]), (historical_weather[1][2][1], historical_weather[1][2][0], historical_weather[1][0], historical_weather[1][1], historical_weather[1][3])]
     
