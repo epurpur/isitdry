@@ -1,7 +1,6 @@
 import requests
 import json
 import datetime
-import historical_weather as hw
 import os
 
 def daily_forecast(city_id):
@@ -44,6 +43,31 @@ def extended_forecast(city_id):
 
     return json_data_list
 
+
+
+#############INSERT HISTORICAL WEATHER INFO HERE
+#output should look like this: [(7.0, 0.0, (0.0, 0.0), 0.0), (0.0, 0.0, (0.0, 0.0), 0.0)]
+# this tuple is (for one day) (hi temp, lo temp, Daily Precip, avg wind, humidity)
+
+def historical_Forecast(city_id, lat, lon):
+    """city_id, lat, and lon are used to create api request to return today's weather forecast for city."""
+    
+    # key = os.environ.get('OPENWEATHERMAP_API_KEY')
+    key = "333de4e909a5ffe9bfa46f0f89cad105"
+
+    # lat = 37.272
+    # lon = -107.937
+    dt = 1618934400
+
+    request = requests.get(f'https://api.openweathermap.org/data/2.5/onecall/timemachine?lat={lat}&lon={lon}&dt={dt}&appid={key}&units=imperial')
+
+    json_data = json.loads(request.text)
+
+    for key, value in json_data.items():
+        print(key)
+
+#for Ouray, CO
+historical_Forecast(5433676, 38.03, -107.69)
 
 
 def format_daily_forecast(city_id):
@@ -262,50 +286,6 @@ def format_extended_forecast(city_id):
 
 
 
-def get_historical_weather(lat, lon):
-    """
-    Main function to go through historical weather workflow.
-    Returns paired precipitation, avg wind speed for the last 2 days
-    """
-    try:
-        weather_data = hw.get_historical_weather(lat, lon)
-        precipitation = hw.parse_daily_precip(weather_data)
-        precipitation = [round(i, 2) for i in precipitation]  #rounding to 2 decimal places
-        avg_wind = hw.parse_daily_wind(weather_data)
-        avg_wind = [round(i, 2) for i in avg_wind] #rounding to 2 decimal places
-        temp = hw.parse_daily_temp(weather_data)
-        humidity = hw.parse_daily_humidity(weather_data)
-        
-        data = list(zip(precipitation, avg_wind, temp, humidity))
-
-        if len(data) == 2:
-            return data
-        else: 
-            data = [(1.0, 0.0, (0.0, 0.0), 0.0), (0.0, 0.0, (0.0, 0.0), 0.0)]
-            return data
-    
-    except TypeError:
-        
-        data = [(2.0, 0.0, (0.0, 0.0), 0.0), (0.0, 0.0, (0.0, 0.0), 0.0)]
-
-        return data
-
-    except IndexError:    #historical temps are not returned, resulting in an index error
-
-        data = [(3.0, 0.0, (0.0, 0.0), 0.0), (0.0, 0.0, (0.0, 0.0), 0.0)]
-
-        return data
-
-    except ZeroDivisionError:  #no historical weather data for some reason
-
-        data = [(4.0, 0.0, (0.0, 0.0), 0.0), (0.0, 0.0, (0.0, 0.0), 0.0)]
-
-        return data
-        
-
-# # get_historical_weather(35.045631, -85.309677)
-
-
 def get_date_range():
     """Creates date range for 7 day period of weather forecast. This includes two days prior to current date through
     4 days beyond current date. (2 previous days + 5 day forecast)"""
@@ -343,7 +323,8 @@ def image_choice(lat, lon, city_id):
     daily weather and return url string for use in object 
     """
 
-    historical_weather = get_historical_weather(lat, lon)   # this is what is should look like: [(2.0, 0.0, (0.0, 0.0), 0.0), (0.0, 0.0, (0.0, 0.0), 0.0)]
+    # historical_weather = get_historical_weather(lat, lon)   # this is what is should look like: [(2.0, 0.0, (0.0, 0.0), 0.0), (0.0, 0.0, (0.0, 0.0), 0.0)]
+    historical_weather = [(2.0, 0.0, (0.0, 0.0), 0.0), (0.0, 0.0, (0.0, 0.0), 0.0)]
 
     #this is a reorganized tuple so it matches the format of the daily_forecast and extended_forecast
     historical_weather = [(historical_weather[0][2][1], historical_weather[0][2][0], historical_weather[0][0], historical_weather[0][1], historical_weather[0][3]), (historical_weather[1][2][1], historical_weather[1][2][0], historical_weather[1][0], historical_weather[1][1], historical_weather[1][3])]

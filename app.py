@@ -40,9 +40,9 @@ def weather_forecast(climbing_area, city_id, lat, lon, weather_site):
     daily_forecast = wf.format_daily_forecast(city_id)
     extended_forecast = wf.format_extended_forecast(city_id)
     # historical_forecast = wf.get_historical_weather(lat, lon)
-    historical_forecast = [(2.0, 0.0, (0.0, 0.0), 0.0), (0.0, 0.0, (0.0, 0.0), 0.0)]
-    
-    print(historical_forecast)
+    # print('here', historical_forecast)
+    historical_forecast = [(7.0, 0.0, (0.0, 0.0), 0.0), (0.0, 0.0, (0.0, 0.0), 0.0)]
+    # print('here2', historical_forecast)
     dates = wf.get_date_range()
 
 
