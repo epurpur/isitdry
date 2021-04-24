@@ -2,6 +2,8 @@ import requests
 import json
 import datetime
 import os
+from statistics import mean
+import historical_weather as hw
 
 def daily_forecast(city_id):
     """city_id is used to create api request to return today's weather forecast for city."""
@@ -47,27 +49,64 @@ def extended_forecast(city_id):
 
 #############INSERT HISTORICAL WEATHER INFO HERE
 #output should look like this: [(7.0, 0.0, (0.0, 0.0), 0.0), (0.0, 0.0, (0.0, 0.0), 0.0)]
-# this tuple is (for one day) (hi temp, lo temp, Daily Precip, avg wind, humidity)
+# this tuple is (for one day) (daily precip, avg wind, (hi temp, lo temp), humidity)
 
-def historical_Forecast(city_id, lat, lon):
-    """city_id, lat, and lon are used to create api request to return today's weather forecast for city."""
+def historical_forecast(lat, lon):
+    """city_id, lat, and lon are used to create api request to return previous 2 days weather forecast for location"""
     
-    # key = os.environ.get('OPENWEATHERMAP_API_KEY')
-    key = "333de4e909a5ffe9bfa46f0f89cad105"
+    #gets unix timestamp for each of last two days
+    today = datetime.date.today()
+    day1 = hw.create_unix_timestamp(today - datetime.timedelta(days=1))
+    day2 = hw.create_unix_timestamp(today - datetime.timedelta(days=2))
 
-    # lat = 37.272
-    # lon = -107.937
-    dt = 1618934400
+    days = [day1, day2]
 
-    request = requests.get(f'https://api.openweathermap.org/data/2.5/onecall/timemachine?lat={lat}&lon={lon}&dt={dt}&appid={key}&units=imperial')
+    daily_stats = []
 
-    json_data = json.loads(request.text)
+    #make api call and get weather for each day
+    for day in days:
+    
+        API_KEY = '333de4e909a5ffe9bfa46f0f89cad105'
+        request = requests.get(f'https://api.openweathermap.org/data/2.5/onecall/timemachine?lat={lat}&lon={lon}&dt={day}&appid={API_KEY}&units=imperial')
+        
+        json_data = json.loads(request.text)
+        
+        #get high and low temp for one day
+        temperatures = []
+        for i in json_data['hourly']:
+            temperatures.append(i['temp'])
+        hi_temp = max(temperatures)
+        lo_temp = min(temperatures)
+        
+        #get rainfall total for one day
+        daily_precip = []
+        for i in json_data['hourly']:
+            try:                            #if hour has rainfall
+                daily_precip.append(i['rain']['1h'])
+            except:                         #if no rainfall in that hour
+                pass
+        daily_precip = sum(daily_precip)
+        
+        #get average wind speed
+        wind_speeds = []
+        for i in json_data['hourly']:
+            wind_speeds.append(i['wind_speed'])
+        avg_wind = round(mean(wind_speeds), 2)    #rounded to 2 decimal places
+        
+        # get average humidity
+        humidity = []
+        for i in json_data['hourly']:
+            humidity.append(i['humidity'])
+        avg_humidity = round(mean(humidity), 2)
+        
+        stats_today = (daily_precip, avg_wind, (hi_temp, lo_temp), avg_humidity)
+        daily_stats.append(stats_today)
 
-    for key, value in json_data.items():
-        print(key)
+    return daily_stats
 
 #for Ouray, CO
-historical_Forecast(5433676, 38.03, -107.69)
+print('HERE')
+print(historical_forecast(38.03, -107.69))
 
 
 def format_daily_forecast(city_id):

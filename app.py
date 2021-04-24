@@ -39,10 +39,7 @@ def weather_forecast(climbing_area, city_id, lat, lon, weather_site):
     sites = db.create_site_list_sqlite()
     daily_forecast = wf.format_daily_forecast(city_id)
     extended_forecast = wf.format_extended_forecast(city_id)
-    # historical_forecast = wf.get_historical_weather(lat, lon)
-    # print('here', historical_forecast)
-    historical_forecast = [(7.0, 0.0, (0.0, 0.0), 0.0), (0.0, 0.0, (0.0, 0.0), 0.0)]
-    # print('here2', historical_forecast)
+    historical_forecast = wf.historical_forecast(lat, lon)
     dates = wf.get_date_range()
 
 
