@@ -57,7 +57,7 @@ nav a {
     padding: 5px;
     opacity: .6;
     transition: opacity .2s ease-in-out;
-    font-size: 35px;;
+    font-size: 35px;
 }
 
 /* style for when hovering over header item */
@@ -284,12 +284,15 @@ ul {
 
 #img-container {
     height: 100%;
-    padding: 0 10px 0 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
 #img-container img {
     height: 400px;
-    width: 100%;
+    width: 400px;
+    padding: 10px;
 }
 
 
