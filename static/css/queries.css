@@ -36,64 +36,34 @@
 }
 
 
+@media only screen and (max-width: 895px) {
+
+	/* Weather Forecast Page */
+	#location-header {
+		font-size: 35px;
+	}
+
+	.weather-forecast-rows img {
+		height: 90px;
+		width: 90px;
+	}
+}
+
 @media only screen and (max-width: 767px) {
 
 	/* Weather Forecast Page */
 
+	.weather-forecast-rows {
+		display: flex;
+		flex-direction: column;
+	}
+
 	.column {
-	    float: left;
-	    width: 99%;
-	    height: 200px;
-	    margin-left: 2px;
-	    margin-right: 2px;
-	    margin-bottom: 5px;
-	    background-color: darkgray;
-		}
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+	}
 
-	.location-header {
-	    font-size: 32px;
-	    font-family: "Lato";
-		}
-
-	.location-item {
-	    display: inline-block;
-	    font-family: "Lato";
-	    font-size: 16px;
-	    padding-left: 1%;
-	    width: 100%;
-		}
-
-	.date-text {
-	    text-align: center;
-	    color: darkblue;
-	    font-size: 15px;
-	    font-weight: bold;
-	    width: 70%;
-		}
-
-	.date-subtext {
-	    font-size: 10px;
-	    text-align: center;
-	    font-weight: bold;
-	    width: 70%;
-		}
-
-	.forecast-info {
-	    padding-left: 10%;
-	    font-size: 12px;
-	    font-family: "Lato";
-		}
-
-	img {
-		float: left;
-	    margin: 0 auto;  /*center aligns images */
-	    height: 95%;
-	    width: 35%;
-	    text-align: center;
-	    padding-top: 1%;
-	    padding-right: 7%;
-	    padding-left: 5px;
-		}
 
 	/* Contact Page */
 
