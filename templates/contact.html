@@ -5,35 +5,29 @@
 
 {% block content %}
 
-    <h2> Contact Page </h2>
-
-    <div class='parent'>
-        <div class='block1'> 
-            <p id="personal-bio">Thanks for checking out my climbing weather application. I built it for several reasons:
-            <p id="reasons">1. Learn the Flask python web framework</p>
-            <p id="reasons">2. Learn web design basics </p>
-            <p id="reasons">3. Satisfy my itch to build a functional climbing weather app that serves climbers in finding dry rock.</p>
-            <p id="personal-bio"> Contact: epurpur@gmail.com</p>
-            <div class="github-contact">
-                <a href="https://github.com/epurpur/Climbing-Weather-App">
-                    <p id="personal-bio"> Check me out on github </p>
-                </a>
-            </div>
-            <div class="github-icon">
-                <a href="https://github.com/epurpur/Climbing-Weather-App">
-                <img src="/static/img/github.svg" alt="github logo" class="github-icon">
-                </a>
-            </div>
-            
+    <section>
+        <div id='parent-container'>
+            <section id='text-container'>
+                <p>Thanks for checking out my climbing weather app. I built it for the following reasons:</p>
+                    <ul>
+                        <li>Learn the python flask web framework</li>
+                        <li>Learn the basics of web design</li>
+                        <li>Build a functional application that serves climbers in finding dry rock</li>
+                    </ul>
+                <p>Contact Me</p>
+                <div id="contact-info">
+                    <a href="mailto:epurpur@gmail.com" target="_blank"><img class="contact-image" src="/static/img/email.png" alt="email link with letter icon"></a> 
+                    <a href="https://www.linkedin.com/in/erich-purpur-140a1433/" target="_blank"><img class="contact-image" src="/static/img/linkedin.png" alt="LinkedIn logo"></a> 
+                    <a href="https://github.com/epurpur" target="_blank"><img class="contact-image" src="/static/img/github.png" alt="Github logo"></a> 
+                    <a href="https://gis.stackexchange.com/users/118507/erich-purpur" target="_blank"><img class="contact-image" src="/static/img/stackoverflow.png" alt="StackOverflow logo"></a> 
+                </div>
+            </section>
+            <section id='img-container'>
+                <img src="/static/img/ErichPic.png">
+            <section>
         </div>
-        <div class='block2'>
-            <img src="/static/img/ErichPic.png" alt="Erich Pic" class="head-shot">
-        </div>
-  
-        
 
-    </div>
-
+    </section>
 
 
 {% endblock content %}

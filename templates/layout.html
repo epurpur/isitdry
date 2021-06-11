@@ -15,14 +15,18 @@
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/queries.css') }}">
         <link rel="stylesheet" type="text/css" href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-        
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300&display=swap" rel="stylesheet">
 
     </head>
 
     <body>
         
         <header>
-          <h1> Is it dry? - Climbing Weather Forecast </h1>
+          <h1>Is it dry?</h1>
+          <h2>A climber's guide to finding dry rock</h2>
           <nav>
             <a href="{{ url_for('home') }}">Home</a>
             <a href="{{ url_for('contact') }}">Contact</a>
@@ -30,14 +34,12 @@
         </header>
 
         <main>
-            <div class="row">
                 <!-- child templates override this block -->
                 {% block content %}{% endblock %}
-            </div>
         </main>
         
         <footer>
-            <h2> </h2>
+            <p>Created by <a href="https://github.com/epurpur">Erich Purpur</a></p>
         </footer>
         
     </body>

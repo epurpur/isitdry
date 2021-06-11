@@ -7,10 +7,14 @@ import os
 
 app = Flask(__name__)
 
+#reset these when deploying to production
+# app.config['GOOGLE_MAPS_JS_API_KEY'] = os.getenv('GOOGLE_MAPS_JS_API_KEY')
+# app.config['CLIMACELL_API_KEY'] = os.getenv('CLIMACELL_API_KEY')
+# app.config['OPENWEATHERMAP_API_KEY'] = os.getenv('OPENWEATHERMAP_API_KEY')
 
-app.config['GOOGLE_MAPS_JS_API_KEY'] = os.getenv('GOOGLE_MAPS_JS_API_KEY')
-app.config['CLIMACELL_API_KEY'] = os.getenv('CLIMACELL_API_KEY')
-app.config['OPENWEATHERMAP_API_KEY'] = os.getenv('OPENWEATHERMAP_API_KEY')
+app.config['GOOGLE_MAPS_JS_API_KEY'] = "AIzaSyDJUs8L9_E6WPwmA8SEow0b8e73D0he7cg"
+app.config['CLIMACELL_API_KEY'] = "HWqf2cQp5LHxHQwd78MMd2NVTM85GIlQ"
+app.config['OPENWEATHERMAP_API_KEY'] = "333de4e909a5ffe9bfa46f0f89cad105"
 
 
 
@@ -35,7 +39,7 @@ def weather_forecast(climbing_area, city_id, lat, lon, weather_site):
     sites = db.create_site_list_sqlite()
     daily_forecast = wf.format_daily_forecast(city_id)
     extended_forecast = wf.format_extended_forecast(city_id)
-    historical_forecast = wf.get_historical_weather(lat, lon)
+    historical_forecast = wf.historical_forecast(lat, lon)
     dates = wf.get_date_range()
 
 
@@ -54,5 +58,5 @@ def weather_forecast(climbing_area, city_id, lat, lon, weather_site):
 
 
 if __name__ == "__main__":
-    app.run()    
+    app.run(debug=True)    
 

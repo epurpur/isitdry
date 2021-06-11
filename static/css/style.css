@@ -1,28 +1,28 @@
-/*~~~~~~~~~~~~~~~~~*/
-/*  GLOBAL STYLES  */ 
-/*~~~~~~~~~~~~~~~~~*/
 
-html {
-    background-color: #dedede;
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
-    font-size: 20px;
+/* USE CTRL+SHIFT+R TO RELOAD CSS STYLES  */
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*        CSS Variables         */ 
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+:root {
+    --header-footer-color: #9f96b1;
+    --background-color: azure;
+    --box-color: rgb(150, 150, 150);
+
+    --header-font: 'Permanent Marker', cursive;
+    --main-font: 'Jura', sans-serif
 }
 
-body {
-    margin: 0;
-}
 
-.body-section {
-    list-style: none;
-}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*  LAYOUT STYLES - layout.html */ 
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-.footer-section {
-    list-style: none;
-}
-
-.header-section {
-    list-style: none;
+* {
+    color: black;
+    font-family: var(--main-font);
 }
 
 /*~~~~~~~~~~~~~~~~~*/
@@ -32,25 +32,32 @@ body {
 header {
     padding: 15px;
     text-align: center;
-    background-color: #f5f4f7;
-    height: auto;
+    background-color: var(--header-footer-color);
+    border-radius: 5px;
+    padding-bottom: 5px;
+    height: 140px;
 }
 
 header h1 {
-    font-weight: 900;
-    color: #000;
+    font-family: var(--header-font);
+    font-size: 45px;
     margin: 0;
-    font-size: 200%;
+}
+
+header h2 {
+    font-family: var(--header-font);
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
 }
 
 nav a {
     outline: none;
     text-decoration: none;
+    padding: 5px;
     opacity: .6;
-    padding: 0 5px;
-    color: black;
     transition: opacity .2s ease-in-out;
-    font-size: 130%;
+    font-size: 35px;;
 }
 
 /* style for when hovering over header item */
@@ -60,23 +67,70 @@ nav a:focus {
 }
 
 /*~~~~~~~~~~~~~~~~~*/
+/*      BODY       */ 
+/*~~~~~~~~~~~~~~~~~*/
+body {
+    background-color: var(--background-color);
+}
+
+/*~~~~~~~~~~~~~~~~~*/
 /*      MAIN       */ 
 /*~~~~~~~~~~~~~~~~~*/
 
-div .top-div {
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+/*~~~~~~~~~~~~~~~~~*/
+/*     FOOTER      */ 
+/*~~~~~~~~~~~~~~~~~*/
+
+footer {
+    background-color: var(--header-footer-color);
+    height: 50px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    font-size: 20px;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+    opacity: 0.6;
+    transition: opacity .2s ease-in-out;
+}
+
+footer a:hover,
+footer a:focus {
+  opacity: 1;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*    Homepage - home.html    */ 
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.top-div {
     margin-top: 5px;
-    height: 25px;
+    height: 60px;
 }
 
-div .main {
-    padding: 10px;
+.top-div p {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 5px;
 }
 
-div .content-div {
+.content-div {
     width: 100%;
-    background-color: azure;
     float: left;
-    margin-right: 5px;
+    padding-bottom: 10px;
 }
 
 .map {
@@ -84,156 +138,159 @@ div .content-div {
     width: 100%;
 }
 
-/*~~~~~~~~~~~~~~~~~*/
-/*     FOOTER      */ 
-/*~~~~~~~~~~~~~~~~~*/
-
-h2 {
-    font-family: "Lato";
-    padding-left: 1%;
-}
 
 
-/*~~~~~~~~~~~~~~~~~~~~~~~*/
-/* WEATHER FORECAST PAGE */ 
-/*~~~~~~~~~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* WEATHER FORECAST PAGE - weather_forecast.html */ 
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 .overview-info {
-    padding-top: 1%;
-    padding-bottom: 0%;
-    padding-right: 1%;
-    padding-left: 1%;
+    display: flex;
     height: 350px;
 }
 
 .location-information {
-    display: inline-block;
-    width: 49%;
-    height: 98%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5px;
+    background-color:rgb(150, 150, 150);
+    border-radius: 5px;
+    padding-bottom: 40px;
+    margin: 10px 10px 10px 0px;
 }
 
-.location-header {
-    font-size: 40px;
-    font-family: "Lato";
+#location-header {
+    font-size: 45px;
+    border: 3px solid black;
+    border-radius: 5px;
+    position: relative;
+    top: 25px;
 }
 
-.location-item {
-    display: inline-block;
-    font-family: "Lato";
-    font-size: 22px;
-    padding-left: 1%;
-    width: 100%;
+.location-title {
+    display: flex;
+    align-items: center;
+    font-size: 23px;
+    position: relative;
+    bottom: 15px;
+}
+
+#location {
+    position: relative;
+    left: 26px;
+}
+
+#weather-site {
+    position: relative;
+    right: 25px;
+}
+
+.fixed-text {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    margin-right: 5px;
 }
 
 #map-inset {
-    float: right;
     width: 50%;
-    height: 98%;
-    background-color: azure;
-    padding-right: 1%;
+    border: .5px solid black;
+    border-radius: 5px;
+    margin: 10px 0 10px 0;
+}
+
+.weather-forecast-rows {
+    width: 100%;
+    display: flex;
+    align-items: space-evenly;
 }
 
 .column {
-    float: left;
-    width: 13.8%;
-    height: 410px;
-    margin-left: 2px;
-    margin-right: 2px;
-    background-color: darkgray;
-}
-
-
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+    width: 13.95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--box-color);
+    border-radius: 10px;
+    margin: 2px;
 }
 
 img {
-    display: block;
-    margin: 0 auto;  /*center aligns images */
-    height: 30%;
-    width: 75%;
-    text-align: center;
-    padding-top: 5%;
+    width: 110px;
+    height: 110px;
+    border-radius: 10px;
+    margin-top: 15px;
 }
 
-.date-text {
-    text-align: center;
-    color: darkblue;
-    font-weight: bold;
+.cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .date-subtext {
-    font-size: 12px;
+    border-bottom: 1px solid black;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*  CONTACT PAGE - contact.html  */ 
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+#parent-container {
+    display: flex;
+    width: 100%;
+    background-color: var(--box-color);
+}
+
+#text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--box-color);
+    font-size: 25px;
+    border-radius: 10px;
+}
+
+#text-container p {
     text-align: center;
-    font-weight: bold;
 }
 
-.forecast-info {
-    padding-left: 2%;
-    font-size: 16px;
-    font-family: "Lato";
+ul {
+    display: flex;
+    flex-direction: column;
 }
 
-
-
-/*~~~~~~~~~~~~~~~~~*/
-/*  CONTACT PAGE   */ 
-/*~~~~~~~~~~~~~~~~~*/
-
-.parent {
-    width: 100%;
-    height: 375px;
-    padding-left: 1%;
+#contact-info {
+    display: flex;
+    justify-content: center;
 }
 
-.block1 {
-    display: inline-block;
-    float: left;
-    width: 65%;
-    height: 55%;
-    padding-left: 1%;
+.contact-image {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    background-color: var(--box-color);
+    transition: background-color .2s ease-in-out;
 }
 
-.block2 {
-    display: inline-block;
-    float: left;
-    width: 30%;
+.contact-image:hover {
+    background-color: var(--background-color);
+    border-radius: 5px;
+}
+
+#img-container {
     height: 100%;
-    padding-left: 1%;
+    padding: 0 10px 0 0;
 }
 
-
-.head-shot {
+#img-container img {
+    height: 400px;
     width: 100%;
-    height: 100%;
-    border-radius: 10%;
 }
 
-#personal-bio {
-    font-family: "Lato";
-    font-size: 25px; 
-    height: 20%;
-}
 
-#reasons {
-    padding-left: 15%;
-    font-size: 19px;
-}
 
-.github-contact {
-    width: 35%;
-    float: left;
-    display: inline-block;
-}
-
-.github-icon {
-    width: 45px;
-    height: 45px;
-    display: inline-block;
-    float: left;
-    padding-top: 1%;
-}
