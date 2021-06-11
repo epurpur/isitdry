@@ -218,6 +218,10 @@ footer a:focus {
     margin: 2px;
 }
 
+.info-holder {
+    text-align: center;
+}
+
 img {
     width: 110px;
     height: 110px;
