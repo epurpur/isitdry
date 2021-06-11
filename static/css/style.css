@@ -235,6 +235,11 @@ img {
     border-bottom: 1px solid black;
 }
 
+.forecast-info {
+    padding-left: 2%;
+    font-size: 14px;
+    font-family: "Lato";
+    }
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /*  CONTACT PAGE - contact.html  */ 

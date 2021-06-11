@@ -3,21 +3,10 @@
 @media only screen and (max-width: 1200px) {
 
 	/* Weather Forecast Page */
+	.date-subtext {
+		font-size: 12px;
+	}
 
-	.column {
-	    float: left;
-	    width: 13.8%;
-	    height: 380px;
-	    margin-left: 2px;
-	    margin-right: 2px;
-	    background-color: darkgray;
-		}
-
-	.forecast-info {
-	    padding-left: 2%;
-	    font-size: 14px;
-	    font-family: "Lato";
-		}
 }
 
 
@@ -26,44 +15,12 @@
 	/* Weather Forecast Page */
 
 	.column {
-	    float: left;
-	    width: 13.7%;
-	    height: 315px;
-	    margin-left: 2px;
-	    margin-right: 2px;
-	    background-color: darkgray;
-		}
+	    height: 415px;
+	}
 
-	.location-header {
-	    font-size: 35px;
-	    font-family: "Lato";
-		}
-
-	.location-item {
-	    display: inline-block;
-	    font-family: "Lato";
-	    font-size: 18px;
-	    padding-left: 1%;
-	    width: 100%;
-		}
 
 	.forecast-info {
-	    padding-left: 2%;
-	    font-size: 12px;
-	    font-family: "Lato";
-		}
-
-	.date-text {
-	    text-align: center;
-	    color: darkblue;
-	    font-size: 13px;
-	    font-weight: bold;
-		}
-
-	.date-subtext {
-	    font-size: 10px;
-	    text-align: center;
-	    font-weight: bold;
+	    font-size: 11px;
 		}
 
 	/* Contact Page */
