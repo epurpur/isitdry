@@ -105,8 +105,8 @@ def historical_forecast(lat, lon):
     return daily_stats
 
 #for Ouray, CO
-print('HERE')
-print(historical_forecast(38.03, -107.69))
+# print('HERE')
+# print(historical_forecast(38.03, -107.69))
 
 
 def format_daily_forecast(city_id):
