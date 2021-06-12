@@ -144,7 +144,7 @@ footer a:focus {
 /* WEATHER FORECAST PAGE - weather_forecast.html */ 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-.overview-info {
+#overview-info {
     display: flex;
     height: 350px;
 }

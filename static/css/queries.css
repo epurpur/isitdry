@@ -147,30 +147,12 @@
 
 	/* Weather Forecast Page */
 
-	.column {
-	    float: left;
-	    width: 99%;
-	    height: 200px;
-	    margin-left: 2px;
-	    margin-right: 2px;
-	    margin-top: 5px;
-	    margin-bottom: 5px;
-	    background-color: darkgray;
-		}
+	.overview-info {
+		display: flex;
+		flex-direction: column;
+	}
 
-	.location-information {
-	    display: inline-block;
-	    width: 98%;
-	    height: 75%;
-		}
 
-	.date-text {
-	    text-align: center;
-	    color: darkblue;
-	    font-size: 12px;
-	    font-weight: bold;
-	    width: 70%;
-		}
 
 	/* Home Page */
 
