@@ -71,7 +71,6 @@
 		height: 250px;
 		display: flex;
 		flex-direction: row;
-		padding: 0 0 0 10px;
 	}
 
 	.info-holder {
@@ -81,6 +80,7 @@
 		justify-content: center;
 		align-items: center;
 		font-size: 20px;
+		padding: 0 0 0 150px;
 	}
 
 	.weather-forecast-rows img {
@@ -96,6 +96,7 @@
 	.cards {
 		width: 100%;
 		display: flex;
+		padding: 0 0 0 50px;
 	}
 
 	.forecast-info {
@@ -110,17 +111,17 @@
 	    width: 100%;
 	    height: 55%;
 	    padding-left: 1%;
-		}
+	}
 
 	.block2 {
 	    display: none;
-		}
+	}
 
 	.github-contact {
 	    width: 45%;
 	    float: left;
 	    display: inline-block;
-		}
+	}
 
 	#img-container {
 		display: none;
@@ -147,22 +148,41 @@
 
 	/* Weather Forecast Page */
 
-	.overview-info {
+	#overview-info {
 		display: flex;
 		flex-direction: column;
+		height: 1000px;
 	}
 
-
-
-	/* Home Page */
-
 	#map-inset {
-	    float: right;
-	    width: 99%;
+	    width: 99.5%;
 	    height: 98%;
-	    background-color: azure;
-	    padding-right: 1%;
-		}
+	}
+
+	.location-information {
+		width: 98%;
+		margin: 10px 10px 0 0;
+	}
+
+	#location-header {
+		font-size: 40px;
+	}
+
+	.location-title {
+		font-size: 25px;
+	}
+
+	.info-holder {
+		padding: 0 0 0 75px;
+	}
+	
+	.column {
+		width: 98%;
+	}
+
+	.cards {
+		padding: 0 0 0 30px;
+	}
 
 	/* Contact Page */
 
