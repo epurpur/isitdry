@@ -8,7 +8,8 @@ import historical_weather as hw
 def daily_forecast(city_id):
     """city_id is used to create api request to return today's weather forecast for city."""
     
-    key = os.environ.get('OPENWEATHERMAP_API_KEY')
+    #key = os.environ.get('OPENWEATHERMAP_API_KEY')
+    key = "333de4e909a5ffe9bfa46f0f89cad105"
 
 
     request = requests.get(f'http://api.openweathermap.org/data/2.5/group?APPID={key}&id={city_id}&units=imperial')
@@ -29,7 +30,8 @@ def extended_forecast(city_id):
     This is good for 4 days into the future. Does not include today's forecast'
     """
 
-    key = os.environ.get('OPENWEATHERMAP_API_KEY')
+    # key = os.environ.get('OPENWEATHERMAP_API_KEY')
+    key = "333de4e909a5ffe9bfa46f0f89cad105"
 
 
 
@@ -64,8 +66,7 @@ def historical_forecast(lat, lon):
     #make api call and get weather for each day
     for day in days:
     
-        key = os.environ.get('OPENWEATHERMAP_API_KEY')
-
+        API_KEY = '333de4e909a5ffe9bfa46f0f89cad105'
         request = requests.get(f'https://api.openweathermap.org/data/2.5/onecall/timemachine?lat={lat}&lon={lon}&dt={day}&appid={API_KEY}&units=imperial')
         
         json_data = json.loads(request.text)
