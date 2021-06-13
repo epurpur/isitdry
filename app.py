@@ -8,9 +8,11 @@ import os
 app = Flask(__name__)
 
 #reset these when deploying to production
-app.config['GOOGLE_MAPS_JS_API_KEY'] = os.getenv('GOOGLE_MAPS_JS_API_KEY')
-app.config['OPENWEATHERMAP_API_KEY'] = os.getenv('OPENWEATHERMAP_API_KEY')
+# app.config['GOOGLE_MAPS_JS_API_KEY'] = os.getenv('GOOGLE_MAPS_JS_API_KEY')
+# app.config['OPENWEATHERMAP_API_KEY'] = os.getenv('OPENWEATHERMAP_API_KEY')
 
+app.config['GOOGLE_MAPS_JS_API_KEY'] = "AIzaSyDJUs8L9_E6WPwmA8SEow0b8e73D0he7cg"
+app.config['OPENWEATHERMAP_API_KEY'] = "333de4e909a5ffe9bfa46f0f89cad105"
 
 
 
