@@ -209,7 +209,7 @@ footer a:focus {
 }
 
 .column {
-    width: 13.95%;
+    width: 14%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -240,7 +240,6 @@ img {
 }
 
 .forecast-info {
-    padding-left: 2%;
     font-size: 14px;
     font-family: "Lato";
     }
