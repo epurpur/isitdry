@@ -75,6 +75,7 @@ def historical_forecast(lat, lon):
         temperatures = []
         for i in json_data['hourly']:
             temperatures.append(i['temp'])
+        hi_temp = 0
         hi_temp = max(temperatures)
         lo_temp = min(temperatures)
         
@@ -85,7 +86,7 @@ def historical_forecast(lat, lon):
                 daily_precip.append(i['rain']['1h'])
             except:                         #if no rainfall in that hour
                 pass
-        daily_precip = sum(daily_precip)
+        daily_precip = round(sum(daily_precip) / 100, 2) #shifts decimal 2 places to left
         
         #get average wind speed
         wind_speeds = []
@@ -99,14 +100,17 @@ def historical_forecast(lat, lon):
             humidity.append(i['humidity'])
         avg_humidity = round(mean(humidity), 2)
         
-        stats_today = (daily_precip, avg_wind, (hi_temp, lo_temp), avg_humidity)
+        stats_today = (daily_precip, avg_wind, (round(hi_temp, 2), round(lo_temp,2)), avg_humidity)
         daily_stats.append(stats_today)
+
+        print('DAILY STATS')
+        print(daily_stats)
 
     return daily_stats
 
-#for Ouray, CO
+#for Charlottesville, VA
 # print('HERE')
-# print(historical_forecast(38.03, -107.69))
+# print(historical_forecast(38.029, -78.477))
 
 
 def format_daily_forecast(city_id):
@@ -361,13 +365,13 @@ def image_choice(lat, lon, city_id):
     Then take that data and put into weather_type object. Then take text of each
     daily weather and return url string for use in object 
     """
-
+    historical_weather = historical_forecast(lat,lon)
     # historical_weather = get_historical_weather(lat, lon)   # this is what is should look like: [(2.0, 0.0, (0.0, 0.0), 0.0), (0.0, 0.0, (0.0, 0.0), 0.0)]
-    historical_weather = [(2.0, 0.0, (0.0, 0.0), 0.0), (0.0, 0.0, (0.0, 0.0), 0.0)]
+    # historical_weather = [(2.0, 0.0, (0.0, 0.0), 0.0), (0.0, 0.0, (0.0, 0.0), 0.0)]
 
     #this is a reorganized tuple so it matches the format of the daily_forecast and extended_forecast
     historical_weather = [(historical_weather[0][2][1], historical_weather[0][2][0], historical_weather[0][0], historical_weather[0][1], historical_weather[0][3]), (historical_weather[1][2][1], historical_weather[1][2][0], historical_weather[1][0], historical_weather[1][1], historical_weather[1][3])]
-    
+
     todays_weather = format_daily_forecast(city_id)
     #this will be a tuple for each day as follows: (hi_temp, lo_temp, daily_precip, daily_wind, daily_humidity)
     extended_weather = format_extended_forecast(city_id)
