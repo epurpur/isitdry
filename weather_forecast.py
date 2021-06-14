@@ -9,8 +9,6 @@ def daily_forecast(city_id):
     """city_id is used to create api request to return today's weather forecast for city."""
     
     key = os.environ.get('OPENWEATHERMAP_API_KEY')
-    # key = "333de4e909a5ffe9bfa46f0f89cad105"
-
 
     request = requests.get(f'http://api.openweathermap.org/data/2.5/group?APPID={key}&id={city_id}&units=imperial')
     
@@ -31,8 +29,6 @@ def extended_forecast(city_id):
     """
 
     key = os.environ.get('OPENWEATHERMAP_API_KEY')
-    # key = "333de4e909a5ffe9bfa46f0f89cad105"
-
 
 
     json_data_list = []             #need to create a list to store json data, so we capture all data from each state (and locations within that state) per API request
@@ -66,7 +62,6 @@ def historical_forecast(lat, lon):
     #make api call and get weather for each day
     for day in days:
     
-        # API_KEY = '333de4e909a5ffe9bfa46f0f89cad105'
         API_KEY = os.environ.get('OPENWEATHERMAP_API_KEY')
 
         request = requests.get(f'https://api.openweathermap.org/data/2.5/onecall/timemachine?lat={lat}&lon={lon}&dt={day}&appid={API_KEY}&units=imperial')
