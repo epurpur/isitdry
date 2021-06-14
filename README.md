@@ -8,6 +8,9 @@ Climbing Weather Forecast application I built in order to learn the python flask
 
 ***To deploy locally***
 
+-re-add environment variables. They are found in the 'isitdry' project in heroku under the 'settings' tab.
+        - need to re-add environment variables for OpenWeatherMap api key and Google Maps JS API key
+
 -clone repository
 -start virtual environment using the following:
 
